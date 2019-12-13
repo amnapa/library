@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/*Route::get('/books/{book}', 'BooksController@show');
+Route::get('/books', 'BooksController@index');*/
+Route::post('/books', 'BooksController@store');
+Route::patch('/books/{book}', 'BooksController@update');
+Route::delete('/books/{book}', 'BooksController@destroy');
+
+
+Route::post('/authors', 'AuthorsController@store');
