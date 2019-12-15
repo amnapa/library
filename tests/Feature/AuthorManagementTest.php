@@ -19,7 +19,7 @@ class AuthorManagementTest extends TestCase
      */
     public function an_author_can_be_created()
     {
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
 
         $response = $this->post('/authors', [
             'name' => 'Name',
